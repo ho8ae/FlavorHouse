@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@react-native-masked-view/masked-view": "^0.3.2",
+    "@react-navigation/drawer": "^6.x",
     "@react-navigation/native": "^6.x",
     "@react-navigation/stack": "^6.x",
     "react": "18.2.0",
     "react-native": "0.72.17",
     "react-native-gesture-handler": "^2.21.2",
+    "react-native-reanimated": "^3.16.6",
     "react-native-safe-area-context": "^5.0.0",
     "react-native-screens": "^4.4.0"
   },
