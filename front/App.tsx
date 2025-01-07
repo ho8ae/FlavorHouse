@@ -1,3 +1,4 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React, {useState} from 'react';
 import {
   Button,
@@ -7,6 +8,8 @@ import {
   TextInput,
   View,
 } from 'react-native';
+import AuthHomeScreen from './src/screens/AuthHomeScreen';
+import AuthStackNavigator from './src/navigation/AuthStackNavigator';
 
 function App() {
   const [name, setName] = useState('');
@@ -18,21 +21,9 @@ function App() {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      {/* 노치 영역을 침범하지 않기 위해 SafeArea 사용 함 */}
-      <View style={styles.inputContainer}>
-        <Text>이름</Text>
-        <TextInput
-          style={styles.input}
-          value={name}
-          onChangeText={handleChangeInput}
-        />
-      </View>
-      <View style={styles.inputContainer}>
-        <TextInput style={styles.input} />
-        <Text>텍스트</Text>
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <AuthStackNavigator />
+    </NavigationContainer>
   );
 }
 
