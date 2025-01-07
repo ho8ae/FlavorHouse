@@ -493,22 +493,17 @@ PODS:
   - RNGestureHandler (2.21.2):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
-  - RNReanimated (3.16.6):
+  - RNReanimated (3.15.5):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
     - ReactCommon/turbomodule/core
-    - RNReanimated/reanimated (= 3.16.6)
-    - RNReanimated/worklets (= 3.16.6)
-  - RNReanimated/reanimated (3.16.6):
+    - RNReanimated/reanimated (= 3.15.5)
+    - RNReanimated/worklets (= 3.15.5)
+  - RNReanimated/reanimated (3.15.5):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
     - ReactCommon/turbomodule/core
-    - RNReanimated/reanimated/apple (= 3.16.6)
-  - RNReanimated/reanimated/apple (3.16.6):
-    - RCT-Folly (= 2021.07.22.00)
-    - React-Core
-    - ReactCommon/turbomodule/core
-  - RNReanimated/worklets (3.16.6):
+  - RNReanimated/worklets (3.15.5):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
     - ReactCommon/turbomodule/core
@@ -752,7 +747,7 @@ SPEC CHECKSUMS:
   ReactCommon: 561cfc1683ccdebe8a377b4616958ea6a1f62d91
   RNCMaskedView: a25bd07426ad99b0740043a1f329a7a742e62c02
   RNGestureHandler: 0c8495e94f144a8d7b6bb510c22371377f3fca64
-  RNReanimated: 19be7b4f750edcbaf716adcb49e1ff929c51933d
+  RNReanimated: b0f7e8aa06fc3d0dc0b1987f5fbc67fb91dac9c0
   RNScreens: 67432ff868d905a3ef590099aeddefd8927cc4de
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: ef534101bb891fb09bae657417f34d399c1efe38
