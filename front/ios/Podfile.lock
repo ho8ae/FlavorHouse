@@ -375,7 +375,7 @@ PODS:
   - React-jsinspector (0.72.17)
   - React-logger (0.72.17):
     - glog
-  - react-native-safe-area-context (5.0.0):
+  - react-native-safe-area-context (4.14.1):
     - React-Core
   - React-NativeModulesApple (0.72.17):
     - hermes-engine
@@ -493,21 +493,36 @@ PODS:
   - RNGestureHandler (2.21.2):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
-  - RNReanimated (3.15.5):
-    - RCT-Folly (= 2021.07.22.00)
+  - RNReanimated (3.5.4):
+    - DoubleConversion
+    - FBLazyVector
+    - glog
+    - hermes-engine
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React-callinvoker
     - React-Core
+    - React-Core/DevSupport
+    - React-Core/RCTWebSocket
+    - React-CoreModules
+    - React-cxxreact
+    - React-hermes
+    - React-jsi
+    - React-jsiexecutor
+    - React-jsinspector
+    - React-RCTActionSheet
+    - React-RCTAnimation
+    - React-RCTAppDelegate
+    - React-RCTBlob
+    - React-RCTImage
+    - React-RCTLinking
+    - React-RCTNetwork
+    - React-RCTSettings
+    - React-RCTText
     - ReactCommon/turbomodule/core
-    - RNReanimated/reanimated (= 3.15.5)
-    - RNReanimated/worklets (= 3.15.5)
-  - RNReanimated/reanimated (3.15.5):
-    - RCT-Folly (= 2021.07.22.00)
-    - React-Core
-    - ReactCommon/turbomodule/core
-  - RNReanimated/worklets (3.15.5):
-    - RCT-Folly (= 2021.07.22.00)
-    - React-Core
-    - ReactCommon/turbomodule/core
-  - RNScreens (4.4.0):
+    - Yoga
+  - RNScreens (3.35.0):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
     - React-RCTImage
@@ -727,7 +742,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 8d95d2ed8969c2ce7eb8b4bfaccb0bb9c0423761
   React-jsinspector: 853b8631b908636bb09ef77cb217376c38a0c8ff
   React-logger: afa402da502a35728c9073804b1802861783a996
-  react-native-safe-area-context: 314537f8fca6fe2c06bd53fc8905efa9e6aaaf59
+  react-native-safe-area-context: 758e894ca5a9bd1868d2a9cfbca7326a2b6bf9dc
   React-NativeModulesApple: a3b3019ffee56cf78bbf09c48e056072f3bb4ea4
   React-perflogger: 785b0063af5178298a61b54bb46aae9a19c7bbb5
   React-RCTActionSheet: 84f37b34bd77249263ace75471d6664393c29972
@@ -747,8 +762,8 @@ SPEC CHECKSUMS:
   ReactCommon: 561cfc1683ccdebe8a377b4616958ea6a1f62d91
   RNCMaskedView: a25bd07426ad99b0740043a1f329a7a742e62c02
   RNGestureHandler: 0c8495e94f144a8d7b6bb510c22371377f3fca64
-  RNReanimated: b0f7e8aa06fc3d0dc0b1987f5fbc67fb91dac9c0
-  RNScreens: 67432ff868d905a3ef590099aeddefd8927cc4de
+  RNReanimated: eadb0edc36d21c3743f92827475f5f8496634d8a
+  RNScreens: c09986e2086f03fb9fcaefbff7126fd3a2bb1cf5
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: ef534101bb891fb09bae657417f34d399c1efe38
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
