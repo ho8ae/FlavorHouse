@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import InputField from '../../components/InputField';
 import CustomButton from '../../components/CustomButton';
 import useForm from '../../hooks/useForm';
 import {validateLogin} from '../../utils';
+import {TextInput} from 'react-native-gesture-handler';
 
 function LoginScreen() {
   // 초보 버전
@@ -42,6 +43,8 @@ function LoginScreen() {
   //   });
   // };
 
+  const passwordRef = useRef<TextInput | null>(null);
+
   const login = useForm({
     initialValue: {email: '', password: ''},
     validate: validateLogin,
@@ -55,17 +58,25 @@ function LoginScreen() {
     <SafeAreaView style={styles.container}>
       <View style={styles.inpurConintaer}>
         <InputField
+          autoFocus
           placeholder="이메일"
           error={login.errors.email}
           touched={login.touched.email}
           inputMode="email"
+          blurOnSubmit={false}
+          returnKeyType="next"
+          onSubmitEditing={() => passwordRef.current?.focus()}
           {...login.getTextInputProps('email')}
         />
         <InputField
+          ref={passwordRef}
           placeholder="비밀번호"
           error={login.errors.password}
           touched={login.touched.password}
           secureTextEntry
+          blurOnSubmit={false}
+          returnKeyType="join"
+          onSubmitEditing={handleSubmit}
           {...login.getTextInputProps('password')}
         />
       </View>
